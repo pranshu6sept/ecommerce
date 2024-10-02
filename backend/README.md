@@ -112,12 +112,12 @@ All API responses follow a standard format with the following structure
 
 ## Testing Flow
 
-To test the full flow of the application:
-# 1. Add items to a user's cart using the "Add Item to Cart" endpoint.
-# 2. Generate a discount code using the "Generate Discount Code" endpoint.
-# 3. Perform a checkout with and without the discount code using the "Checkout" endpoint.
-# 4. Check the order statistics using the "Get Order Statistics" endpoint.
+# To test the full flow of the application:
+  1. Add items to a user's cart using the "Add Item to Cart" endpoint.
+  2. Generate a discount code using the "Generate Discount Code" endpoint.
+  3. Perform a checkout with and without the discount code using the "Checkout" endpoint.
+  4. Check the order statistics using the "Get Order Statistics" endpoint.
 
-## Remember to replace user123 with actual user IDs and adjust item IDs as necessary when testing.
+  Remember to replace user123 with actual user IDs and adjust item IDs as necessary when testing.
 
-# This documentation provides a concise overview of the API endpoints, how to use them with curl commands, and the general structure of the application. It should be sufficient for users to understand and interact with your e-commerce backend API.
+This documentation provides a concise overview of the API endpoints, how to use them with curl commands, and the general structure of the application. It should be sufficient for users to understand and interact with your e-commerce backend API.
