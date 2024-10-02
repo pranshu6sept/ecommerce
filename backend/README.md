@@ -113,10 +113,10 @@ All API responses follow a standard format with the following structure
 ## Testing Flow
 
 To test the full flow of the application:
-### 1. Add items to a user's cart using the "Add Item to Cart" endpoint.
-### 2. Generate a discount code using the "Generate Discount Code" endpoint.
-### 3. Perform a checkout with and without the discount code using the "Checkout" endpoint.
-### 4. Check the order statistics using the "Get Order Statistics" endpoint.
+# 1. Add items to a user's cart using the "Add Item to Cart" endpoint.
+# 2. Generate a discount code using the "Generate Discount Code" endpoint.
+# 3. Perform a checkout with and without the discount code using the "Checkout" endpoint.
+# 4. Check the order statistics using the "Get Order Statistics" endpoint.
 
 ## Remember to replace user123 with actual user IDs and adjust item IDs as necessary when testing.
 
