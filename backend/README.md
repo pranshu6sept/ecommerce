@@ -22,6 +22,11 @@ This project provides a backend API for an e-commerce platform, allowing users t
 
     The server will start running on `http://localhost:3000` by default.
 
+4. Run the tests:
+    ```bash
+    npm test
+    ```
+
 ---
 
 ## API Endpoints
