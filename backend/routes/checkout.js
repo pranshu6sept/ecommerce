@@ -26,7 +26,7 @@ router.post('/', (req, res) => {
       totalAmount -= discountAmount;
       validDiscount.used = true;
     } else {
-      return apiResponse(res, 400, 'Invalid discount code');
+      return ApiResponse(res, 400, 'Invalid discount code');
     }
   }
 

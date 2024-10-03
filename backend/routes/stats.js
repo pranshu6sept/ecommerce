@@ -9,12 +9,14 @@ router.get('/order-stats', (req, res) => {
     const totalPurchaseAmount = db.orders.reduce((sum, order) => sum + order.totalAmount, 0);
     const discountCodes = db.discountCodes.map(dc => dc.code);
     const totalDiscountAmount = db.orders.reduce((sum, order) => sum + order.discountAmount, 0);
+    const orderCount = db.orderCount;
   
     const stats = {
       itemsPurchased,
       totalPurchaseAmount,
       discountCodes,
       totalDiscountAmount,
+      orderCount,
     };
   
     return ApiResponse(res, 200, 'Order statistics retrieved successfully', stats);

@@ -6,7 +6,7 @@ This project provides a backend API for an e-commerce platform, allowing users t
 
 1. Clone the repository and navigate to the project directory:
     ```bash
-    git clone https://github.com/yourusername/ecommerce-backend-api.git
+    git clone https://github.com/pranshu6sept/ecommerce.git
     cd ecommerce-backend-api
     ```
 
@@ -38,7 +38,7 @@ curl -X POST http://localhost:3000/api/cart/add \
      -H "Content-Type: application/json" \
      -d '{
            "userId": "user123",
-           "itemId": "item567",
+           "itemId": "1",
            "quantity": 2
          }'
 ```
@@ -64,22 +64,23 @@ curl -X POST http://localhost:3000/api/checkout \
      -H "Content-Type: application/json" \
      -d '{
            "userId": "user123",
-           "discountCode": "DISCOUNT123"
+           "discountCode": "DISCOUNT10"
          }'
+        #  replace discount code with the one generated in the next step
 ```
 
 ### 3. Discount Code Generation
 
 - **URL**: `/api/admin/generate-discount`
 - **Method**: `POST`
-- **Description**: Generates a discount code for a user.
+- **Description**: Generates a discount code for a user to be used in the nth order
 
 #### Example Curl Command:
 ```bash
 curl -X POST http://localhost:3000/api/admin/generate-discount \
      -H "Content-Type: application/json" \
      -d '{
-           "divisibleBy": n
+           "n": 1
          }'
 ```
 
@@ -112,12 +113,11 @@ All API responses follow a standard format with the following structure
 
 ## Testing Flow
 
-# To test the full flow of the application:
+To test the full flow of the application:
   1. Add items to a user's cart using the "Add Item to Cart" endpoint.
   2. Generate a discount code using the "Generate Discount Code" endpoint.
-  3. Perform a checkout with and without the discount code using the "Checkout" endpoint.
-  4. Check the order statistics using the "Get Order Statistics" endpoint.
-
-  Remember to replace user123 with actual user IDs and adjust item IDs as necessary when testing.
+  3. Perform a checkout with discount code using the "Checkout" endpoint by using the discount code generated in the previous step.
+  4. Add more items to the cart and perform a checkout without discount code.
+  5. Check the order statistics using the "Get Order Statistics" endpoint.
 
 This documentation provides a concise overview of the API endpoints, how to use them with curl commands, and the general structure of the application. It should be sufficient for users to understand and interact with your e-commerce backend API.
