@@ -7,7 +7,7 @@ This project provides a backend API for an e-commerce platform, allowing users t
 1. Clone the repository and navigate to the project directory:
     ```bash
     git clone https://github.com/pranshu6sept/ecommerce.git
-    cd ecommerce-backend-api
+    cd backend
     ```
 
 2. Install the dependencies:
